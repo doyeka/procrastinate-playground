@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'procrastinate.contrib.django',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Procrastinate settings
+# The Procrastinate Django integration will look for this dotted path to import the app
+# We'll create `playground/procrastinate_app.py` with an `app` object
+PROCRASTINATE_APP = 'playground.procrastinate_app.app'
