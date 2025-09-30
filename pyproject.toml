@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "procrastinate-playground"
+version = "0.1.0"
+description = "Playground application with procrastinate"
+authors = ["David Oyeka <david@hadrius.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11.11,<3.12"
+django = "5.2.6"
+procrastinate = {version = "3.5.2", extras = ["django"]}
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
